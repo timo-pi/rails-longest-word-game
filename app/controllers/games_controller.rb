@@ -28,7 +28,7 @@ class GamesController < ApplicationController
       elsif included?(params[:answer], params[:grid])
         @score_message = "It's not an english word"
       else
-        @score_message = "No english and different letters!!!"
+        @score_message = "Different letters!!!"
     end
   end
 end
